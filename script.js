@@ -12,13 +12,12 @@ function stopWatch (){
             hours++;
         }
     }
-    function watchStart(){
-        if(timer == null){
-            clearInterval(timer);
-        }
-        timer = setInterval(stopWatch, 1000);
-    }
+    displayTime.innerHTML= `${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "0" + minutes : minutes}:${seconds < 10 ? "0" + seconds : seconds}`
 }
 
-stopWatch();
-console.log(seconds, minutes, hours);
+function watchStart(){
+    if(timer!== null){
+        clearInterval(timer);
+    }
+    timer = setInterval(stopWatch, 1000);
+}
