@@ -21,3 +21,13 @@ function watchStart(){
     }
     timer = setInterval(stopWatch, 1000);
 }
+
+function watchStop(){
+    clearInterval(timer);
+}
+
+function watchReset(){
+    clearInterval(timer);
+    [seconds, minutes, hours] = [0, 0, 0];
+    displayTime.innerHTML= `00:00:00`;
+}
