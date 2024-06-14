@@ -1,18 +1,25 @@
 body {
-    background: #edeaff;
+    background: linear-gradient(45deg, #021f2b 0%, #896a61 99%, #1b1756 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .stopwatch {
     width : 90%;
     max-width: 600px;
-    background: linear-gradient(45deg, #a5d1e3 0%, #fad0c4 99%, #b65439 100%);
+    background: linear-gradient(45deg, #336d84 0%, #46a34f 99%, #2a82da 100%);
     border-radius: 5px;
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 40px 0;
     color: #fff;
-    margin: 200px auto 0;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
